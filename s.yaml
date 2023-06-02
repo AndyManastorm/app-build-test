@@ -7,6 +7,7 @@ vars:
   service:
     name: 'test-app-build'
     description: 'Serverless Devs test app build Service'
+  image: 'registry.cn-beijing.aliyuncs.com/fc-demo2/fc-node14:v1'
 
 services:
   springboot: 
@@ -187,5 +188,5 @@ services:
         timeout: 60
         runtime: custom-container
         customContainerConfig:
-          image: "registry.cn-beijing.aliyuncs.com/xiliu-test/fc-node14:v1"
+          image: '${vars.image}'
         codeUri: ./custom-container-event-nodejs14/code
