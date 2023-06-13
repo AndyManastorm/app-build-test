@@ -1,6 +1,6 @@
 edition: 1.0.0
 name: app-build-test
-access: 'default'
+access: 'default1'
 
 vars: 
   region: 'cn-beijing'
